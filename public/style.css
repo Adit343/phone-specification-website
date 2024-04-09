@@ -1,0 +1,88 @@
+.banner img {
+	margin:auto ;
+}
+
+.products {
+	padding: 50px;
+}
+
+.products .product {
+	background-color: #f8f9fa;
+	padding: 20px;
+    margin-bottom: 20px;
+}
+
+.products .product img{
+    height: 50%;
+    width: 50%;
+}
+
+.products .product .btn {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+        
+.about {
+    background-color: #f8f9fa;
+    padding: 50px;
+}
+        
+
+.about img {
+    max-width: 100%;
+    }
+            
+.contact form {
+    margin-bottom: 20px;
+}
+        
+.contact form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact form .form-control {
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+        
+.contact form button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+        
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+        
+footer{
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 767px){
+
+}
+
+.dropdown-menu{
+    min-width: auto;
+}
+.carousel-item {
+    width: 100%;
+    height: auto;
+}
+.carousel-inner{
+    width: 20%;
+    margin: 55px auto;
+}
+
+.products .card{
+    width: 18rem;
+}
