@@ -4,7 +4,6 @@
     <title>Apple</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,401 +13,51 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    <!-- Include necessary CSS, Bootstrap, or other styling libraries -->
     <script src="index.js"></script>
   </head>
   <body>
     <!-- Navbar -->
-
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand">Apple</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="navbar-brand"
-                ><img src="phone images/logo.png" style="width: 60px" class="rounded-pill"
-              /></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Fe">Featured</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#acc">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-bs-toggle="dropdown"
-              >
-                Select Iphones
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="phone specs details/11pro.html">Iphone 11 pro</a>
-                </li>
-                <li><a class="dropdown-item" href="phone specs details/12.html">Iphone 12</a></li>
-                <li>
-                  <a class="dropdown-item" href="phone specs details/12pro.html">Iphone 12 pro</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="phone specs details/i13.html">Iphone 13 pro max</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="phone specs details/ip14.html"
-                    >Iphone 14 pro max</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-container"></div>
 
     <!-- Carousel -->
+    <div id="carousel-container"></div>
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="3"
-        ></button>
-      </div>
+    <!-- Featured iPhones -->
+    <div id="featured-container"></div>
 
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="phone images/apple1.0.jpg"
-            alt="WELCOME TO APPLE WEBSITE"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption">
-            <h3>WELCOME TO APPLE WEBSITE</h3>
-            <p>HAVE A GREAT EXPERIENCE</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="phone images/apple20.jpg"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption"></div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="phone images/apple21.jpg"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption"></div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="phone images/apple22.jpg"
-            class="d-block w-100"
-          />
-          <div class="carousel-caption"></div>
-        </div>
-      </div>
+    <!-- FAQ -->
+    <div id="faq-container"></div>
 
-      <!-- Left and right controls/icons -->
-      <button
-        class="carousel-control-prev"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
+    <!-- About Us -->
+    <div id="about-container"></div>
 
-      <button
-        class="carousel-control-next"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
+    <!-- Contact Us -->
+    <div id="contact-container"></div>
 
+    <div id="footer-container"></div>
 
-
-    <!-- Card-->
-    <br /><br /><br id="Fe" /><br />
-
-    <section class="products">
-      <div class="container">
-        <h2>Featured iPhones</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top" src="phone images/iphone.jpg" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Iphone 14 pro max</h5>
-                <p class="card-text">
-                  The iPhone 14 Pro Max is the latest flagship smartphone from
-                  Apple, featuring a premium design and cutting-edge technology.
-                  Best in segment.
-                </p>
-                <a href="ip14.html" class="btn btn-primary">View specs</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="phone images/iphone2.2.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Iphone 13 pro max</h5>
-                <p class="card-text">
-                  The device is packed with powerful hardware and advanced
-                  software features that offer a smooth and seamless user
-                  experience.
-                </p>
-                <a href="i13.html" class="btn btn-primary">View specs</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="phone images/iphone12.jpg"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Iphone 12</h5>
-                <p class="card-text">
-                  The devices feature a durable glass front and back, with
-                  aerospace-grade aluminum edges that provide a premium feel in
-                  your hand.
-                </p>
-                <a href="tables.html" class="btn btn-primary">View specs</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <br id="acc" /><br /><br /><br />
-
-    <!-- accordian	 -->
-
-    <h3>FAQs</h3>
-    <div id="accordian">
-      <div class="card">
-        <div class="card-header">
-          <a href="#collapseone" class="card-link" data-toggle="collapse"
-            >Which iphone is best iphone 13 pro max or 14 pro max in terms of
-            battery</a
-          >
-        </div>
-        <div id="collapseone" class="collapse show" data-parent="#accordian">
-          <div class="card-body">
-            In terms of battery life, the iPhone 13 Pro Max generally offers
-            better performance than the iPhone 12 Pro Max. The iPhone 13 Pro Max
-            has a larger battery and is more power efficient due to improvements
-            in the A15 Bionic chip and software optimization. It can provide up
-            to 28 hours of talk time, up to 95 hours of audio playback, up to 25
-            hours of video playback, and up to 95 hours of audio playback.
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <a href="#collapsetwo" class="card-link" data-toggle="collapse"
-            >which iphone currently has best display?</a
-          >
-        </div>
-        <div id="collapsetwo" class="collapse" data- parent="#accordian">
-          <div class="card-body">
-            iphone 15 series has best display in comparision to previous
-            generation iphone series.
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <a href="#collapsethree" class="card-link" data-toggle="collapse"
-            >which iphone should you consider worth the money in 2024?</a
-          >
-        </div>
-        <div id="collapsethree" class="collapse" data-parent="#accordian">
-          <div class="card-body">
-            iPhone 13 is absolutely worth the money considering specifications
-            it's providing at its price segment compare to other phones at same
-            price.
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <a href="#collapsefour" class="card-link" data-toggle="collapse"
-            >which iphone is latest iphone in 2024?</a
-          >
-        </div>
-        <div id="collapsefour" class="collapse" data-parent="#accordian">
-          <div class="card-body">
-            iphone 15 series are latest iphones in which pro series are powered
-            by A17 bionic chip and non-pro series are powered by A16 bionic
-            chip.
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <a href="#collapsefive" class="card-link" data-toggle="collapse"
-            >Should you consider Iphone 12 worth the specifications now?</a
-          >
-        </div>
-        <div id="collapsefive" class="collapse" data-parent="#accordian">
-          <div class="card-body">
-            Well this year iphone 15 series will come so accordingly iphone 12
-            model is quite old so u can consider iphone 13 series instead of 12,
-            considering future software updates.
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <br /><br id="about" /><br /><br />
-
-    <br />
-    <!-- About -->
-    <section class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              Apple Inc. is a technology company based in Cupertino, California,
-              that designs, develops, and sells consumer electronics, software,
-              and online services. The company is most well-known for its
-              iPhone, a line of smartphones that revolutionized the mobile phone
-              industry when it was first introduced in 2007. The iPhone quickly
-              became one of Apple's flagship products, and the company has
-              continued to release updated models with new features and
-              improvements each year. Apple was founded in 1976 by Steve Jobs,
-              Steve Wozniak, and Ronald Wayne, and originally focused on
-              producing personal computers. Over time, the company has expanded
-              into a variety of other product lines, including tablets,
-              smartwatches, and home automation devices. Today, Apple is one of
-              the largest and most profitable companies in the world, with a
-              market capitalization of over $2 trillion.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img src="phone images/appleHQ.jpg" alt="About Image" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <br /><br /><br /><br />
-    <!-- Contact -->
-    <section class="contact">
-      <div class="container">
-        <h2 id="contact">Contact Us</h2>
-        <div class="row">
-          <div class="col-md-12">
-            <form action="/submit-feedback" method="post">
-              <!-- <form> -->
-              <div class="form-group">
-                <label for="name" class="form-label">Name:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" id="alertButton">
-                Send Message
-              </button>
-            </form>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Apple. All rights reserved.</p>
-      </div>
-    </footer>
+    <script>
+      function loadHTML(url, elementId) {
+    fetch(url)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(elementId).innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading the HTML file:', error);
+      });
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    loadHTML('Components/Navbar.html', 'navbar-container');
+    loadHTML('Components/Carousel.html', 'carousel-container');
+    loadHTML('Components/Featured.html', 'featured-container');
+    loadHTML('Components/FAQ.html', 'faq-container');
+    loadHTML('Components/About.html', 'about-container');
+    loadHTML('Components/Contact.html', 'contact-container');
+    loadHTML('Components/Footer.html', 'footer-container');
+  });
+  
+    </script>
   </body>
 </html>
